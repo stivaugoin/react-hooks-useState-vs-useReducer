@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.UseState,
+.UseReducer {
+  flex: 1;
+}
+
+button {
+  margin-bottom: 1em;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
