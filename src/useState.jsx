@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import fetch from "./fetch";
 
-let counter = 0;
+let counter = 1;
 
 function UseState() {
   const [isLoading, setIsLoading] = useState(false);
   const [url, setUrl] = useState(undefined);
 
   const handleClick = async () => {
+    counter = 1;
     setIsLoading(true);
     setUrl(undefined);
 
@@ -15,7 +16,7 @@ function UseState() {
 
     setUrl(cat.url);
     setIsLoading(false);
-    counter = 0;
+    counter = 1;
   };
 
   if (counter) {

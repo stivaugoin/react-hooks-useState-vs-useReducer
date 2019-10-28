@@ -20,7 +20,7 @@ function reducer(state, action) {
   }
 }
 
-let counter = 0;
+let counter = 1;
 
 function UseReducer() {
   const [state, dispatch] = useReducer(reducer, {
@@ -30,12 +30,13 @@ function UseReducer() {
   const { isLoading, url } = state;
 
   const handleClick = async () => {
+    counter = 1;
     dispatch({ type: "startFetching" });
 
     const cat = await fetch();
 
     dispatch({ type: "stopFetching", payload: cat.url });
-    counter = 0;
+    counter = 1;
   };
 
   if (counter) {
