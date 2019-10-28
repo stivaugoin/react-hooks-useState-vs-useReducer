@@ -40,7 +40,7 @@ function UseReducer() {
   };
 
   if (counter) {
-    console.log(`UseReducer - Render #${counter}`);
+    console.log(`UseReducer - Render #${counter}`, { isLoading, url });
   }
   counter += 1;
 

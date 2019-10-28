@@ -20,7 +20,7 @@ function UseState() {
   };
 
   if (counter) {
-    console.log(`UseState - Render #${counter}`);
+    console.log(`UseState - Render #${counter}`, { isLoading, url });
   }
   counter += 1;
 
